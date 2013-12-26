@@ -3053,11 +3053,11 @@ ul.slimmenu.collapsed li > ul {
 
 @font-face {
     font-family: 'OpenSans-Light-webfont';
-    src: url('font/OpenSans-Light-webfont.eot');
-    src: url('font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/OpenSans-Light-webfont.woff') format('woff'),
-         url('font/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('font/OpenSans-Light-webfont.svg#BebasNeueRegular') format('svg');
+    src: url('/font/OpenSans-Light-webfont.eot');
+    src: url('/font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/OpenSans-Light-webfont.woff') format('woff'),
+         url('/font/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('/font/OpenSans-Light-webfont.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 

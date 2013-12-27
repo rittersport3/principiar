@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-@import url("colors/color-orange.css");
+@import url("colors/color-green.css");
 
 
 
@@ -887,13 +887,13 @@ html.ie9 .holeIn { opacity: 1!important; }
   opacity: 0;
 }
 
-.rotating.spin {
-  -webkit-transform: rotate(360deg) scale(0);
-  -moz-transform: rotate(360deg) scale(0);
-  -ms-transform: rotate(360deg) scale(0);
-  -o-transform: rotate(360deg) scale(0);
-  transform: rotate(360deg) scale(0);
-}
+/* .rotating.spin {
+   -webkit-transform: rotate(360deg) scale(0);
+   -moz-transform: rotate(360deg) scale(0);
+   -ms-transform: rotate(360deg) scale(0);
+   -o-transform: rotate(360deg) scale(0);
+   transform: rotate(360deg) scale(0);
+*/ }
 
 
 
@@ -958,7 +958,7 @@ html.ie9 .holeIn { opacity: 1!important; }
 }
 
 .menu-back{
-	background:rgba(245,245,245,0);
+	background:rgba(65,65,65,0);
 }
 
 
@@ -970,7 +970,7 @@ html.ie9 .holeIn { opacity: 1!important; }
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-	background:rgba(245,245,245,0.96);
+	background:rgba(65,65,65,0.96);
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
 	width:75px;
@@ -1000,13 +1000,13 @@ html.ie9 .holeIn { opacity: 1!important; }
 
 .logo{
 	position:absolute;
-	width:100px;
-	height:81px;
+	width:200px;
+	height:199px;
 	z-index:10000;
 	left:10px;
 	top:10px;
 	background:url('../../images/logo.png') no-repeat center center;
-	background-size:100px 81px;
+	background-size:200px 199px;
 }
 
 
@@ -1083,7 +1083,7 @@ ul.slimmenu > li:first-child { border-left: 0 }
 ul.slimmenu > li:last-child { margin-right: 0 }
 ul.slimmenu li a {
     display: block;
-    color: #000;
+    color: #FFF;
     padding: 10px 0px;
 	cursor:pointer;
     margin: 0px 12px;
@@ -1098,7 +1098,7 @@ ul.slimmenu li a {
     transition: all 300ms linear;
 }
 ul.slimmenu li a:hover {
-    border-bottom:2px solid rgba(0,0,0,1);
+    border-bottom:2px solid white;
     text-decoration: none;
 }
 
@@ -1220,7 +1220,7 @@ ul.slimmenu.collapsed li > ul {
 }
 
 .home-text h1 {
-	color:#000;
+	color:#FFF;
 	text-align:center;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -1231,7 +1231,7 @@ ul.slimmenu.collapsed li > ul {
 }
 
 .home-text p {
-	color:#000;
+	color:#FFF;
 	font-size: 14px;
 	text-align:center;
 	font-family: 'OpenSans-Light-webfont';
@@ -1239,7 +1239,7 @@ ul.slimmenu.collapsed li > ul {
 }
 .home-text p span{
 	padding-top:10px;
-	border-top:1px solid rgba(0,0,0,.7);
+	border-top:1px solid rgba(255,255,255,.7);
 }
 
 .arrow-wrap{

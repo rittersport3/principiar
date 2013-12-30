@@ -2,9 +2,7 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "observatory": {
-        "version": "0.3.21"
-      }
+      "observatory": {}
     },
     "packages": {
       "observatory": {

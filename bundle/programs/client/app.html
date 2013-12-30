@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html##HTML_ATTRIBUTES##>
+<head>
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/packages/observatory/lib/codemirror/codemirror.css?9dc9936318cd4e8e19e26725bc3d2b26bef17149">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/packages/observatory/lib/codemirror/theme/ambiance.css?c305d4916ebe6261ce3d11d97813fc31d86d5bb0">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/packages/observatory/lib/codemirror/theme/solarized.css?b1abc835de2a63945d60dae90a5046fa706036c1">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/packages/observatory/mars/observatory.less.css?b3dc0f0f333a1a579a08aba2b92cc2e508656eb9">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/colors/color-green.css?f42959d8882ca2131e995f5ab62e5a275da49df1">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/base.css?854d64f8c826219c465891e18caba6540c212773">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/colorbox.css?c3ce263242be1a5c847e9e7a239607daa6f6eb67">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/font-awesome.css?0e88dfc059e4e452ed288335a770ad8efaae691e">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/layout.css?27a2a1c41fc1628e248396ae1f635e7479ea05c4">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/owl.carousel.css?a94f55d20e5b54cea55606a67337f638e7d91e00">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/retina.css?c4e6e0bffd74fa352c92ee1ecbd249ffe4ac403d">
+  <link rel="stylesheet" href="##BUNDLED_JS_CSS_PREFIX##/client/stylesheets/skeleton.css?33f11b73462bb9fdef556e395481c07732ab50e0">
+
+
+##RUNTIME_CONFIG##
+
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/underscore.js?13ab483e8a3c795d9991577e65e811cd0b827997"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/meteor.js?0ee0f69c02b4a9ccb6b7476bddadf436d7592260"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/json.js?e22856eae714c681199eabc5c0710b904b125554"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/ejson.js?6b96257c000bbb949b0e65eaacceeecba5bf84c6"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/logging.js?0b5bf4a50ca23ebf02c29f1243437e173a6b6c1a"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/reload.js?8495281f1e90298939d33611f64cb97609664269"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/deps.js?eba25ec453bb70e5ae5c2c54192d21e0e4d82780"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/check.js?a54cf3c7b3abe9208d064621eb80a3ecaf2f4add"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/random.js?66f32d9674bbf319a47b2638439a6bf41565ebb9"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/ordered-dict.js?bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/geojson-utils.js?81b79d5cf96d00b4b7a28987debcffb665c17526"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/minimongo.js?90e2dbb4e5aa8fe163e25bb45c3b7edd5ea1b8cc"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/livedata.js?a631e1fda09ec6a55504ac1389ba74e18ceb2b4d"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/follower-livedata.js?39b05f02878030ae806a16a173661b7df1e92eb6"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/application-configuration.js?fa92020e10c808f1287070d009f69a4054676e5a"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/insecure.js?3dc9d4a2dad55999b5b15a447d57f3d5fb66b290"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/mongo-livedata.js?32cb8e7b8b1a4ecda94a731b3a18e434e3067a5f"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/autoupdate.js?c76cb651a032d3fdb795608d8dc51e7e07e1ee97"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/standard-app-packages.js?601dc02c741b437bbe8be03773a37f7d896a88e7"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/autopublish.js?c3059a78bb200b171099fc4fa1a9345101790ddb"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/jquery.js?1a9d113f1f0c905a877e6eb3d97b07a871baa416"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/domutils.js?c5d4d4c5629038d1bb6deea7acd7a0512d406fe3"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/liverange.js?b3097d72d458e645fd4f0021c8ff5189abe8d98a"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/universal-events.js?5bfa39513d2caa4af4f829d7f4907afae3601adf"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/spark.js?3a050592ceb34d6c585c70f1df11e353610be0ab"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/preserve-inputs.js?7b3b8bf0669f1f110126607ecd8488f719344f09"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/coffeescript.js?969f68786bbc68e6cad299e74922a53af3d1404b"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/handlebars.js?c2b75d49875b4cfcc7544447aad117fd81fccf3b"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/templating.js?5944cd5e16b26fbf83959a0fe92d7754029a624d"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/less.js?7d1bf981a25a449d6270558bcfc983313c40cd26"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/observatory-galileo.js?894ef6408d452a2cbdcd2436a6f5e5653ccfce5e"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/webapp.js?5c7d940d9baab5b893f7e5904e7258ef69e7ef8b"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/reactive-dict.js?22667928acc72f619ce81e7ac1e35def1ba9e0ae"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/session.js?5bcd2d86431dc10d5f4be0910cb6567342e1aaf6"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/observatory-apollo.js?7cc0d63266616e11948cf8bf61c788d09d31715e"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/observatory.js?bf144a9f6d21b8b667a6fddf5c619739d344c00e"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/packages/global-imports.js?dcbd783eb8bcb790209ba7b40445fd26d7f5eaac"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/template.principiar.js?c74694c902152b46648dd97b5123918022c38430"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/client/compatibility/c.js?b5efd6e9d9b9b2e0f5f928ea70d7b63f6655b7f9"></script>
+  <script type="text/javascript" src="##BUNDLED_JS_CSS_PREFIX##/principiar.js?b3279e2b24369c0900e5dfb4ce7524a1db967537"></script>
+
+
+<title>principiar</title>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+
+
+    <!--[if lte IE 8]>
+        <script src="js/html5.js"></script>
+    <![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,3 +1,0 @@
-var url = "http://maps.google.com/maps/api/js?sensor=true";
-$.getScript( url, function() {});
-
